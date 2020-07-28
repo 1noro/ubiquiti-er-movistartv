@@ -4,6 +4,10 @@ Vamos a suponer que la red del HGU es la 192.168.1.0/24 y que la LAN del ER es l
 
 > HGU = Router de Movistar, ER = EdgeRouter.
 
+### Escenario
+
+![escenario](img/mapa.jpg)
+
 ### 1 - Asignar a la interfaz WAN física del ER una IP fija o por DHCP dentro de la red del HGU
 
 ![imagen 1](img/1.png)
@@ -88,7 +92,7 @@ show ip multicast interfaces
     - Dirección IP del OPCH: 239.0.2.29:22222
     - DNS Primario: 172.26.23.3
 
-### Enlaces
+### Enlaces en los que me he basado
 
 - https://help.ui.com/hc/en-us/articles/204961854-EdgeRouter-IGMP-Proxy
 - https://comunidad.movistar.es/t5/Soporte-Fibra-y-ADSL/Routers-ubiquiti-con-HGU-mitrastar/m-p/3441509#M313299
