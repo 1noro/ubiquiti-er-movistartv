@@ -4,6 +4,8 @@ Vamos a suponer que la red del HGU es la 192.168.1.0/24 y que la LAN del ER es l
 
 > HGU = Router de Movistar, ER = EdgeRouter.
 
+## Si pruebas esta configuración y tienes fallos, coméntalos como issues de este repositorio
+
 ### Escenario
 
 ![escenario](img/mapa.png)
@@ -44,7 +46,7 @@ Es importante que se mantengan en el orden definido.
 
 #### Reglas de WAN_LOCAL:
 
-Las mismas que las de WAN_IN pero sospecho que no deberían de hacer falta.
+Las mismas que las de WAN_IN, pero sospecho que no deberían de hacer falta.
 
 > Necesita mas pruebas.
 
@@ -100,3 +102,5 @@ show ip multicast interfaces
 - https://help.ui.com/hc/en-us/articles/204961854-EdgeRouter-IGMP-Proxy
 - https://comunidad.movistar.es/t5/Soporte-Fibra-y-ADSL/Routers-ubiquiti-con-HGU-mitrastar/m-p/3441509#M313299
 - https://comunidad.movistar.es/t5/Soporte-Fibra-y-ADSL/configuracion-del-router-ax-11000-asus-por-conexion-pppoe-ONT/m-p/4217145#M427122
+
+## Si pruebas esta configuración y tienes fallos, coméntalos como issues de este repositorio
