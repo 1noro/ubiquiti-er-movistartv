@@ -76,7 +76,7 @@ commit ; save
 exit
 ```
 
-Comandos para verificar que el tráfico multicast está fluyendo:
+#### Comandos para verificar que el tráfico multicast está fluyendo:
 
 ```
 show ip multicast mfc
