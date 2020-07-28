@@ -10,25 +10,25 @@ Vamos a suponer que la red del HGU es la 192.168.1.0/24 y que la LAN del ER es l
 
 ### 1 - Asignar a la interfaz WAN física del ER una IP fija o por DHCP dentro de la red del HGU
 
-![imagen 1](img/1.png)
+![imagen 1-1](img/1-1.png)
 
 ### 2 - Enmascarar todo el tráfico hacia la red del HGU con dicha interfaz
 
-![imagen 2](img/2.png)
+![imagen 2-1](img/2-1.png)
 
-### 3 - Añadir un par de rutas al ER para subir las peticiones IGMP/Multicast
+### 3 - Añadir un par de rutas al ER para las peticiones IGMP/Multicast
 
-Las rutas son rutas estáticas de tipo Gateway.
+Rutas estáticas de tipo Gateway.
 
 ![imagen 3-1](img/3-1.png)
 
-No estoy seguro de que sean necesarias todas, pero son las que había en la tabla del router HGU:
+No estoy seguro de que sean necesarias todas, pero son las que había en la tabla del router HGU, como se puede ver a continuación:
 
 ![imagen 3-2](img/3-2.png)
 
 ### 4 - Configurar el Firewall del ER
 
-Me baso en las 2 Rulesets definidas por la configuración básica del ER.
+Me baso en las 2 Rulesets definidas por la configuración básica del ER a través del Wizard.
 
 ![imagen 4-1](img/4-1.png)
 
@@ -50,7 +50,7 @@ Las mismas que las de WAN_IN pero sospecho que no deberían de hacer falta.
 
 ### 5 - [Habilitar IGMP Proxy en el ER](https://help.ui.com/hc/en-us/articles/204961854-EdgeRouter-IGMP-Proxy)
 
-Nos conectamos a la terminal del ER (por la Web o por SSH).
+Nos conectamos a la terminal del ER (por la CLI Web o por SSH).
 
 ```
 configure
@@ -74,7 +74,7 @@ commit ; save
 exit
 ```
 
-Comandos de verificación:
+Comandos para verificar que el tráfico multicast está fluyendo:
 
 ```
 show ip multicast mfc
@@ -84,6 +84,9 @@ show ip multicast interfaces
 ### 6 - Configuración estática de red en el aparato de Movistar TV
 
 - Pulsamos el botón superior con forma de persona en el mando de la TV de Movistar repetidas veces durante el arranque, hasta entrar en el menú de configuración de red.
+
+![imagen 6-1](img/6-1.png)
+
 - Editamos la configuración en modo estático:
     - Modo de red: estático
     - Dirección IP: 192.168.10.40
