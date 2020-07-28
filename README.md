@@ -6,7 +6,7 @@ Vamos a suponer que la red del HGU es la 192.168.1.0/24 y que la LAN del ER es l
 
 ### Escenario
 
-![escenario](img/mapa.jpg)
+![escenario](img/mapa.png)
 
 ### 1 - Asignar a la interfaz WAN física del ER una IP fija o por DHCP dentro de la red del HGU
 
@@ -86,7 +86,7 @@ show ip multicast interfaces
 - Pulsamos el botón superior con forma de persona en el mando de la TV de Movistar repetidas veces durante el arranque, hasta entrar en el menú de configuración de red.
 - Editamos la configuración en modo estático:
     - Modo de red: estático
-    - Dirección IP: 192.168.10.254
+    - Dirección IP: 192.168.10.40
     - Máscara de Subred: 255.255.255.0
     - Pasarela (Gateway): 192.168.10.1
     - Dirección IP del OPCH: 239.0.2.29:22222
