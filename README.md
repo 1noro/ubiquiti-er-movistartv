@@ -90,6 +90,6 @@ show ip multicast interfaces
 
 ### Enlaces
 
-- (https://help.ui.com/hc/en-us/articles/204961854-EdgeRouter-IGMP-Proxy)
-- (https://comunidad.movistar.es/t5/Soporte-Fibra-y-ADSL/Routers-ubiquiti-con-HGU-mitrastar/m-p/3441509#M313299)
-- (https://comunidad.movistar.es/t5/Soporte-Fibra-y-ADSL/configuracion-del-router-ax-11000-asus-por-conexion-pppoe-ONT/m-p/4217145#M427122)
+- https://help.ui.com/hc/en-us/articles/204961854-EdgeRouter-IGMP-Proxy
+- https://comunidad.movistar.es/t5/Soporte-Fibra-y-ADSL/Routers-ubiquiti-con-HGU-mitrastar/m-p/3441509#M313299
+- https://comunidad.movistar.es/t5/Soporte-Fibra-y-ADSL/configuracion-del-router-ax-11000-asus-por-conexion-pppoe-ONT/m-p/4217145#M427122
